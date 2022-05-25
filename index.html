@@ -15,56 +15,50 @@
     <v-app>
       <v-main>
         <header>
-
+          <v-app-bar color="orange" elevation="3">
+            <v-app-bar-title class="title"><div style="width: 100px;">Vuetify</div></v-app-bar-title>
+          </v-app-bar>
         </header>
 
-        <main>
-          <v-app-bar
-            color="orange"
-            elevation="3"
-          >
-          <v-app-bar-title class="title">Vuetify</v-app-bar-title>
-          </v-app-bar>
-          <v-col cols="4" align-center>
-            <h2>Login</h2>
-            <v-text-field label="Email"></v-text-field>
-            <v-text-field label="Senha"></v-text-field>
-            <div class="text-center">
-              <v-btn color="orange">
-                Logar
-              </v-btn>
-            </div>
-          </v-col>
-
+        <main style="margin: 12% 0 12% 0;">
+          <v-row justify="center">
+            <v-col cols="4" align-center padless center>
+              <h2>Login</h2>
+              <v-text-field label="Email"></v-text-field>
+              <v-text-field label="Senha"></v-text-field>
+              <div class="text-center">
+                <v-btn color="orange">
+                  Logar
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
         </main>
-
-
-          <v-footer
-            dark
-            padless
-          >
-            <v-card
-              flat
-              tile
-              class="orange bottom white--text text-center"
-              elevation= "3"
-            >
-            <img src="icons/240px-Instagram_icon.webp" alt="" class="logo">
-              <v-card-text>
-              </v-card-text>
         
-              <v-card-text class="white--text pt-0">
-                Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              </v-card-text>
-        
-              <v-divider></v-divider>
-        
-              <v-card-text class="white--text">
-                2022 — <strong>Vuetify</strong>
-              </v-card-text>
-            </v-card>
-          </v-footer>
+        <footer>
+        <v-footer dark padless>
+          <v-card flat tile class="orange white--text text-center" elevation="24">
+            <img src="icons/Instagram_icon.png" alt="" class="logo">
+            
+            <v-card-text>
+            </v-card-text>
 
+            <v-card-text class="white--text pt-0">
+              Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum.
+              Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim
+              a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat
+              augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor
+              vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-text class="white--text">
+              2022 — <strong>Vuetify</strong>
+            </v-card-text>
+          </v-card>
+        </v-footer>
+      </footer>
       </v-main>
     </v-app>
   </div>

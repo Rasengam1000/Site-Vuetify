@@ -2,3 +2,12 @@
     width: 25px;
     height: 25px;
 }
+
+.v-main__wrap{ 
+    display: flex; 
+    flex-direction: column; 
+}
+
+footer{
+    margin-top:auto; 
+  }
