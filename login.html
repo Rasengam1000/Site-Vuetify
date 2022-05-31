@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+
+    <div id="app">
+        <v-app>
+            <v-main>
+                <header>
+                    <v-app-bar color="orange" elevation="3" style="display: flex; justify-content: space-between;">
+                        <v-app-bar-title class="title">
+                            <div style="width: 100px; display: inline-flex;">
+                                Vuetify
+                            </div>
+                        </v-app-bar-title>
+                        <div style="margin-left: 70vw;">
+                            <v-btn elevation="2">
+                                <a href="index.html" style="color: black;">Home</a>
+                            </v-btn>
+                        </div>
+                    </v-app-bar>
+
+                </header>
+
+                <main style="margin: 12% 0 12% 0;">
+                    <v-row justify="center">
+                        <v-col cols="4" align-center padless center>
+                            <h2>Login</h2>
+                            <v-text-field label="Email"></v-text-field>
+                            <v-text-field label="Senha"></v-text-field>
+                            <div class="text-center">
+                                <v-btn color="orange">
+                                    Logar
+                                </v-btn>
+                            </div>
+                        </v-col>
+                    </v-row>
+                </main>
+
+                <footer>
+                    <v-footer dark padless>
+                        <v-card flat tile class="orange white--text text-center" elevation="24">
+                            <img src="icons/Instagram_icon.png" alt="" class="logo">
+
+                            <v-card-text>
+                            </v-card-text>
+
+                            <v-card-text class="white--text pt-0">
+                                Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus
+                                commodo interdum.
+                                Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa
+                                consectetur
+                                dignissim
+                                a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada.
+                                Nulla placerat
+                                augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam
+                                elementum tempor
+                                vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus.
+                            </v-card-text>
+
+                            <v-divider></v-divider>
+
+                            <v-card-text class="white--text">
+                                2022 — <strong>Vuetify</strong>
+                            </v-card-text>
+                        </v-card>
+                    </v-footer>
+                </footer>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+        })
+    </script>
+</body>
+
+</html>
