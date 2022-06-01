@@ -10,12 +10,29 @@
     flex-direction: column; 
 }
 
+.button-div {
+    margin-left: 70vw;
+}
+
 footer{
     margin-top:auto; 
   }
 
+.main-home{
+  margin: 12% 0 12% 15%; 
+  display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+    -ms-flex-align: center;"
+}
 @media screen and (max-width: 768px) {
     .main-home{
+        margin: 12% 0 12% 0%;
         flex-direction: column;
+    }
+
+    .button-div {
+        margin-left: 45vw;
     }
 }
