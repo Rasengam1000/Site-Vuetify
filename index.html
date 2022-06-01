@@ -21,7 +21,7 @@
                 Vuetify
               </div>
 
-              
+
             </v-app-bar-title>
             <div style="margin-left: 70vw;">
               <v-btn elevation="2">
@@ -32,20 +32,14 @@
 
         </header>
 
-        <main style="margin: 12% 0 12% 0; display: flex; flex-direction: row; -ms-flex-align: center;">
-          <template>
-            <v-carousel v-model="model">
-              <v-carousel-item v-for="(color, i) in colors" :key="color">
-                <v-sheet :color="color" height="100%" tile>
-                  <v-row class="fill-height" align="center" justify="center">
-                    <div class="text-h2">
-                      Slide {{ i + 1 }}
-                    </div>
-                  </v-row>
-                </v-sheet>
-              </v-carousel-item>
-            </v-carousel>
-          </template>
+        <main class="main-home" style="margin: 12% 0 12% 15%; display: flex; flex-direction: row; -ms-flex-align: center;">
+          <v-img
+            style="min-height: 400px; width:auto;"
+            lazy-src="icons/Morar-em-Florianópolis.jpg"
+            max-height="500"
+            max-width="500"
+            src="icons/Morar-em-Florianópolis.jpg"
+          ></v-img>
 
           <template>
             <v-card class="mx-auto" max-width="400">
@@ -98,7 +92,10 @@
         <footer>
           <v-footer dark padless>
             <v-card flat tile class="orange white--text text-center" elevation="24">
-              <img src="icons/Instagram_icon.png" alt="" class="logo">
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="" class="logo">
+              <img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="" class="logo">
+              <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="" class="logo">
+
 
               <v-card-text>
               </v-card-text>
@@ -132,7 +129,9 @@
       el: '#app',
       vuetify: new Vuetify(),
     })
+
   </script>
+
 </body>
 
 </html>
