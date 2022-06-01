@@ -19,18 +19,25 @@ footer{
   }
 
 .main-home{
-    margin: 12% 0 12% 15%; 
+    margin: 12% 5% 12% 15%; 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     -ms-flex-align: center;
 }
+
+.mx-auto{
+    margin: 0 0 0 20px;
+}
 @media screen and (max-width: 768px) {
     .main-home{
         margin: 12% 0 12% 0%;
         flex-direction: column;
+        align-items: center;
     }
-
+    .mx-auto{
+        margin: 20px 0 0 0;
+    }
     .button-div {
         margin-left: 45vw;
     }
